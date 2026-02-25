@@ -15,4 +15,4 @@ document.write( idade + "<br>");
 document.write( altura + "<br>" );
 
 var dias = idade * 365
-document.write("<p style='color: red'> "Você ja viveu " + dias + "dias" < /p>")
+document.write("<p style='color: red'> Você ja viveu "+ dias + " dia </p>");
