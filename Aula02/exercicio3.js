@@ -1,12 +1,20 @@
 function calcular()
 {
-    let temp_fah, temp_cel ;
+    let valor, taxa, tempo, resultado;
 
+    //entrada
 
-    temp_fah=document.getElementById("temp_fah").value;
+    valor = Number(document.getElementById("valor").value);
+    taxa = Number(document.getElementById("taxa").value);
+    tempo = Number(document.getElementById("tempo").value);
 
-   temp_cel = (Number(temp_fah) - 32) * 5 / 9;
+    //processamento
 
-    document.getElementById("temp_cel").innerHTML =
-    "<p> A temperatura digitada é igual a " + temp_cel + " Graus Celcius " + "</p>";
+    resultado = valor + (valor * (taxa * taxa / 100)* tempo);
+
+    //saida
+
+    document.getElementById("resultado").innerHTML = 
+    "<p> O valor da parcela é: " +  resultado + "</p>"
+
 }
