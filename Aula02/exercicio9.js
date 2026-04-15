@@ -1,0 +1,19 @@
+function calcular()
+{
+    let valor,taxa,tempo, resultado;
+
+    //entrada
+
+    valor = Number(document.getElementById("valor").value);
+    taxa = Number(document.getElementById("taxa").value);
+    tempo = Number(document.getElementById("tempo").value);
+    
+    //processamento
+
+    resultado = valor * (1 + (taxa / 100 * tempo));
+
+    //saida
+
+    document.getElementById("resultado").innerHTML = 
+    "<p> O valor do montante é : " +  resultado + "</p>"
+}
